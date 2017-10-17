@@ -1,0 +1,22 @@
+50 4B 03 04:ZIP:50 4B xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx 00 00 00:zip
+50 4B 03 04 0A 00 02 00:EPUB::zip
+50 4B 03 04 14 00 06 00:DOCX,PPTX,XLSX:50 4B 05 06 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx:docx
+50 4B 03 04 14 00 08 00 08 00:JAR::jar
+FF D8 FF E0 xx xx 4A 46 49 46 00:JFIF,JPE,JPEG,JPG:FF D9:jpg
+FF D8 FF E1 xx xx 45 78 69 66 00:JPG,EXIF:FF D9:jpg
+FF D8 FF E8 xx xx 53 50 49 46 46 00:JPG,SPIFF:FF D9:jpg
+89 50 4E 47 0D 0A 1A 0A:PNG:49 45 4E 44 AE 42 60 82:png
+51 6b 6c 46 4d 51 4a:Electrum Bitcoin Wallet::
+00 00 00 00 62 31 05 00 09 00 00 00 00 20 00 00 00 09 00 00 00 00 00 00:Bitcoin Core wallet.dat file::dat
+00 00 00 0C 6A 50 20 20 0D 0A:JPEG-2000::jp2
+00 00 00 14 66 74 79 70 33 67 70:3GG,3GP,3G2::3gp
+00 00 00 14 66 74 79 70 69 73 6F 6D:MPEG-4::mp4
+00 00 00 14 66 74 79 70 71 74 20 20:QuickTime movie file::mov
+00 00 00 18 66 74 79 70 33 67 70 35:MPEG-4 video files::mp4
+00 00 00 18 66 74 79 70 6D 70 34 32:MPEG-4 video/QuickTime file::m4v
+00 00 00 1C 66 74 79 70 4D 53 4E 56 01 29 00 46 4D 53 4E 56 6D 70 34 32:MPEG-4 video file::mp4
+00 00 00 20 66 74 79 70 33 67 70:3GPP2 multimedia files::3gp
+00 00 00 20 66 74 79 70 4D 34 41 20:Apple Lossless Audio Codec file::m4a
+00 00 00 20 66 74 79 70 4D 34 56 20:ISO Media, MPEG v4 system, or iTunes AVC-LC file::m4v
+00 00 00 20 66 74 79 70 69 73 6F 6D:MPEG-4::mp4
+00 00 01 Bx:MPEG video file:00 00 01 B7:mpg
