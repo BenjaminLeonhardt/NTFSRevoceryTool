@@ -297,7 +297,7 @@ public:
 					else if (((dr->firstCluster & maske) && maske)) {
 						dr->firstCluster = last->firstCluster + (dr->firstCluster | negMaske);
 					}
-					delete last;
+					delete last; 
 					delete enu;
 				}
 
