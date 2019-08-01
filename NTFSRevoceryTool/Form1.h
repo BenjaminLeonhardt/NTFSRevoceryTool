@@ -140,18 +140,18 @@ namespace CppCLR_WinformsProjekt {
 			this->gelöscht = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->DateiOderOrdnername = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Dateigröße = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Dateiart = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->statusStrip1 = (gcnew System::Windows::Forms::StatusStrip());
 			this->toolStripProgressBar1 = (gcnew System::Windows::Forms::ToolStripProgressBar());
+			this->toolStripStatusLabel1 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
 			this->btnAlleDateienRetten = (gcnew System::Windows::Forms::Button());
 			this->ausgewählteDateiRetten = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->laufwerkOeffnen = (gcnew System::Windows::Forms::Button());
-			this->toolStripStatusLabel1 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
-			this->Dateiart = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
 			this->statusStrip1->SuspendLayout();
@@ -280,6 +280,11 @@ namespace CppCLR_WinformsProjekt {
 			this->Dateigröße->Name = L"Dateigröße";
 			this->Dateigröße->Width = 113;
 			// 
+			// Dateiart
+			// 
+			this->Dateiart->HeaderText = L"Dateiart";
+			this->Dateiart->Name = L"Dateiart";
+			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
@@ -330,6 +335,13 @@ namespace CppCLR_WinformsProjekt {
 			this->toolStripProgressBar1->Size = System::Drawing::Size(100, 16);
 			this->toolStripProgressBar1->Visible = false;
 			// 
+			// toolStripStatusLabel1
+			// 
+			this->toolStripStatusLabel1->Name = L"toolStripStatusLabel1";
+			this->toolStripStatusLabel1->Size = System::Drawing::Size(240, 17);
+			this->toolStripStatusLabel1->Text = L"Fortschritt bei 0.000%, 0 b von 0 b bearbeitet";
+			this->toolStripStatusLabel1->Visible = false;
+			// 
 			// btnAlleDateienRetten
 			// 
 			this->btnAlleDateienRetten->Enabled = false;
@@ -367,19 +379,6 @@ namespace CppCLR_WinformsProjekt {
 			this->laufwerkOeffnen->TabIndex = 14;
 			this->laufwerkOeffnen->Text = L"Laufwerk öffnen";
 			this->laufwerkOeffnen->UseVisualStyleBackColor = true;
-			// 
-			// toolStripStatusLabel1
-			// 
-			this->toolStripStatusLabel1->Name = L"toolStripStatusLabel1";
-			this->toolStripStatusLabel1->Size = System::Drawing::Size(237, 17);
-
-			this->toolStripStatusLabel1->Text = L"Fortschritt bei 0.000%, 0 b von 0 b bearbeitet";
-			this->toolStripStatusLabel1->Visible = false;
-			// 
-			// Dateiart
-			// 
-			this->Dateiart->HeaderText = L"Dateiart";
-			this->Dateiart->Name = L"Dateiart";
 			// 
 			// Form1
 			// 
@@ -488,7 +487,7 @@ namespace CppCLR_WinformsProjekt {
 						 }
 					 }
 					 if (dateinameString != nullptr) {
-						 dataGridView2->Rows->Add(eintrag->mftRH.SequenceNumber, dateiOderOrdner, geloescht, dateinameString, L"");
+						 dataGridView2->Rows->Add(EintragCounter++, eintrag->mftRH.SequenceNumber, dateiOderOrdner, geloescht, dateinameString, L"");
 					 }
 				 }
 			 }
